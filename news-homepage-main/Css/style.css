@@ -1,0 +1,256 @@
+/* Off-white: hsl(36, 100%, 99%)
+Grayish blue: hsl(233, 8%, 79%)
+Dark grayish blue: hsl(236, 13%, 42%)
+Very dark blue: hsl(240, 100%, 5%) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* Does Not Work on Safai*/
+  /*scroll-behavior: smooth;*/
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+  /* Only works if there is nothing absolutely positioned in relation to body */
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+  /* 1140px */
+  max-width: 90rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/**************************/
+/* HEADER */
+/**************************/
+
+.header {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4rem;
+  /* Because we want header to be sticky later */
+}
+
+.logo {
+  height: 3rem;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: hsl(5, 85%, 63%);
+}
+
+/**************************/
+/* HERO */
+/**************************/
+
+.hero {
+  display: flex;
+}
+
+.hero-img {
+  width: 98%;
+  height: 60%;
+}
+
+/**************************/
+/* NEWS */
+/**************************/
+
+.news {
+  background-color: hsl(240, 100%, 5%);
+  height: 37rem;
+  width: 40%;
+  padding: 2rem 2rem;
+}
+
+.news-head {
+  font-size: 3.6rem;
+  color: hsl(35, 77%, 62%);
+  padding-bottom: 3.2rem;
+}
+
+.news-link {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(36, 100%, 99%);
+  padding-bottom: 1rem;
+}
+
+.news-link:link,
+.news-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: hsl(36, 100%, 99%);
+  font-weight: 700;
+  font-size: 1.7rem;
+  transition: all 0.3s;
+}
+
+.news-link:hover,
+.news-link:active {
+  color: hsl(35, 77%, 62%);
+}
+
+.news-exc {
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 75%;
+  padding-bottom: 2.2rem;
+  color: hsla(36, 100%, 99%, 0.601);
+}
+
+/**************************/
+/* HERO ZWEI */
+/**************************/
+
+.hero-info {
+  width: 80%;
+}
+
+.need {
+  display: flex;
+  padding-top: 2rem;
+}
+
+.hero-head {
+  width: 90%;
+  font-weight: 800;
+  line-height: 1.2;
+  font-size: 3.6rem;
+}
+
+.hero-exc {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  width: 85%;
+  padding-top: 0.5rem;
+  color: hsl(236, 13%, 42%);
+}
+
+.btn-btn {
+  margin-top: 3.3rem;
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  color: #fff;
+  letter-spacing: px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+
+/**************************/
+/*FOOTER */
+/**************************/
+
+.footer {
+  display: flex;
+  margin-top: 4.4rem;
+}
+
+.footer-ein {
+  display: flex;
+}
+
+.footer-img {
+  width: 8rem;
+  height: 9.6rem;
+}
+
+.footer-head {
+  font-size: 2.2rem;
+  color: hsla(236, 13%, 42%, 0.879);
+  margin-left: 2rem;
+  /* Margin top can remove */
+  margin-top: 0.2rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  margin-left: 2rem;
+  margin-top: 1.1rem;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: hsl(35, 77%, 62%);
+}
+
+.footer-exc {
+  color: hsl(236, 13%, 42%);
+  font-weight: 400;
+  margin-top: rem;
+  margin-left: 2rem;
+  width: 80%;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-top: 1rem;
+}

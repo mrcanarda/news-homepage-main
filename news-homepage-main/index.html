@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/quaries.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="container">
+    <header class="header">
+      <a href="#">
+        <img class="logo" src="assets/images/logo.svg" alt="news-logo" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="#">New</a></li>
+          <li><a class="main-nav-link" href="#">Popular</a></li>
+          <li><a class="main-nav-link" href="#">Trending</a></li>
+          <li><a class="main-nav-link" href="#">Categories</a></li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-info">
+            <img
+              class="hero-img"
+              src="assets/images/image-web-3-desktop.jpg"
+              alt=""
+            />
+            <div class="need">
+              <div>
+                <h1 class="hero-head">The Bright Future of Web 3.0?</h1>
+              </div>
+              <div>
+                <p class="hero-exc">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <button class="btn-btn">READ MORE</button>
+              </div>
+            </div>
+          </div>
+          <div class="news">
+            <h2 class="news-head">New</h2>
+            <a href="#" class="news-link">Hydrogen VS Electric Cars</a>
+            <p class="news-exc">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+            <a href="#" class="news-link">The Downsides of AI Artistry</a>
+            <p class="news-exc">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+            <a href="#" class="news-link">Is VC Funding Drying Up?</a>
+            <p class="news-exc">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="footer-ein">
+            <div>
+              <img
+                class="footer-img"
+                src="assets/images/image-retro-pcs.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h2 class="footer-head">01</h2>
+              <a class="footer-link" href="#">Reviving Retro PCs</a>
+              <p class="footer-exc">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </div>
+          <div class="footer-ein">
+            <div>
+              <img
+                class="footer-img"
+                src="assets/images/image-top-laptops.jpg"
+              />
+            </div>
+            <div>
+              <h2 class="footer-head">02</h2>
+              <a class="footer-link" href="#">Top 10 Laptops of 2022</a>
+              <p class="footer-exc">
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </div>
+          <div class="footer-ein">
+            <div>
+              <img
+                class="footer-img"
+                src="assets/images/image-gaming-growth.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h2 class="footer-head">03</h2>
+              <a class="footer-link" href="#">The Growth of Gaming</a>
+              <p class="footer-exc">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
